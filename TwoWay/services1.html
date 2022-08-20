@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<title>Dog Walks &amp; Cat Visits</title>
+		<link href="style/services1.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="navbar-container">
+			<img src="img/navbarnt.png" class="nav-img" id="nav-img-00" alt="Image">
+			<div class="navbar">
+					<div class="navbar-button" id="navbar-button-00" onclick="location.href='index.html'";><p><b>Home</b></p></div>
+					<div class="navbar-button" id="navbar-button-10" ><p><b>Walks &amp; Visits</b></p></div>
+					<div class="navbar-button" id="navbar-button-20" onclick="location.href='services2.html';"><p><b>Daycare &amp; Hotel</b></p></div>
+					<div class="navbar-button" id="navbar-button-30" onclick="location.href='about.html';"><p><b>About</b></p></div>
+					<div class="navbar-button" id="navbar-button-40" onclick="location.href='contact.html';"><p><b>Contact</b></p></div>
+			</div>
+		</div>
+		<div class="section-container" id="section-container-00">
+			<img src="img/services1-00.png" class="section-img" id="section-img-00" alt="Image">
+		</div>
+		<div class="section-container" id="section-container-10">
+			<div class="content-container" id="content-container-10">
+				<div class="content-text" id="content-text-10">
+					<center><h1>Overview</h1></center>
+					<p>Here at Two Way Pet Services, we know how important dog walks/cat visits are to the health and well-being of your furry companions; we believe that dog walks are more than just a potty break and cat visits are more than just feeding and cleaning the litter box. Whether it's a long distance walk for your pup who craves physical exercise or stimulation for your kitty through play, your furry companions deserve the best and we are up to the task.<br/><br/></p>
+					<p><b>What we offer with our dog walk/cat visit service:</b></p>
+					<ul>
+						<li>an experienced pet care specialist</li>
+						<li>full 30 minutes of care</li>
+						<li>an after-action report including specific details, photos and gps</li>
+						<li>the ability to message and leave instructions through a premiere pet services app</li>
+						<li>flexibile scheduling</li>
+						<li>discounts for partnered buildings in the neighborhood</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="section-container" id="section-container-20">
+			<div class="content-container" id="content-container-20">
+				<img src="img/services1-20.png" class="section-img" id="section-img-20" alt="Image">
+			</div>
+			<div class="content-container" id="content-container-21">
+				<img src="img/services1-21.png" class="section-img" id="section-img-21" alt="Image">
+			</div>
+		</div>
+		<div class="section-container" id="section-container-30">
+			<div class="content-container" id="content-container-30">
+				<img src="img/services1-30.png" class="section-img" id="section-img-30" alt="Image">
+			</div>
+			<div class="content-container" id="content-container-31">
+				<img src="img/services1-31.png" class="section-img" id="section-img-31" alt="Image">
+			</div>
+		</div>
+		<div class="section-container" id="section-container-50">
+			<div class="content-container" id="content-container-50">
+				<div class="content-text" id="content-text-50">
+					<center><h1>Contact Us!</h1></center>
+					<p>Interested in learning more about our services or would like to schedule an appointment? Contact us!<br/><br/></p>
+					<form action="" method="">
+						<label>Email</label>
+    					<input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+    					<label>Name</label>
+    					<input type="text" id="fullname" name="fullname" placeholder="Your Name" required><br><br>
+    					<label>Message</label>
+    					<textarea type="text" id="message" name="message" placeholder="Write your message here" cols="50" rows="4" maxlength="500"></textarea>
+    					<!--<input type="text" id="message" name="message"  placeholder="Write your message here"><br/><br/>--> 
+    					<input type="submit" value="Submit">
+					</form>
+				</div>	
+			</div>
+			<div class="content-container" id="content-container-51">
+				<iframe id="googlemap-51" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1553.424930047428!2d-77.05516284304095!3d38.858793656823224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b134ad3f4fb7%3A0xe654ba4ec9e555f!2sTwo%20Way%20Dog%20Walking!5e0!3m2!1sen!2sus!4v1660428030452!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+		<div class="section-container" id="section-container-60">
+			<div class="content-container" id="content-container-60">
+				<div class="content-text" id="content-text-60">
+					<p><b>1600 South Eads Street Suite N200 Arlington, VA 22202<br/>571-399-4111<br/>Info@TwoWayDogWalking.com</b></p>	
+				</div>
+			</div>
+			<div class="content-container" id="content-container-61">
+				<img src="img/navbarnt.png" class="section-img" id="section-img-61" alt="Image">
+			</div>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$(document).ready( function () {
+				setContent();
+				$(window).resize(function(){
+					setContent();
+				});
+
+				function setContent(){
+
+					//section-container-00 top margin
+					$('#section-container-00').css({'margin-top': $('.navbar-container').height()});
+
+					//section-container-10 height
+					$('#section-container-10').css({'height': $('#content-text-10').height() +  200 });
+					$('#content-container-10').css({'height': $('#section-container-10').height() });
+					//content-container-10 vertical and horizontal centering 
+					$('#content-text-10').css({'top': ($('#content-container-10').height() - $('#content-text-10').height())/2 });
+					$('#content-text-10').css({'left': ($('#content-container-10').width() - $('#content-text-10').width())/2 });
+					
+					//section-container-20 height
+					/*$('#section-container-20').css({'height': $('#content-text-20').height()+ 200 });
+					$('#content-container-20').css({'height': $('#section-container-20').height() });
+					$('#content-container-21').css({'height': $('#section-container-20').height() });
+					//content-container-20 vertical and horizontal centering 
+					$('#content-text-20').css({'top': ($('#content-container-20').height() - $('#content-text-20').height())/2 });
+					$('#content-text-20').css({'left': ($('#content-container-20').width() - $('#content-text-20').width())/2 });
+
+					//section-container-30 height
+					$('#section-container-30').css({'height': $('#content-text-30').height()+ 200 });
+					$('#content-container-30').css({'height': $('#section-container-30').height() });
+					$('#content-container-31').css({'height': $('#section-container-30').height() });
+					//content-container-30 vertical and horizontal centering 
+					$('#content-text-30').css({'top': ($('#content-container-30').height() - $('#content-text-30').height())/2 });
+					$('#content-text-30').css({'left': ($('#content-container-30').width() - $('#content-text-30').width())/2 });*/
+
+					//section-container-50 height
+					$('#section-container-50').css({'height': $('#content-text-50').height()+ 200 });
+					$('#content-container-50').css({'height': $('#section-container-50').height() });
+					$('#content-container-51').css({'height': $('#section-container-50').height() });
+					//content-container-50 vertical and horizontal centering 
+					$('#content-text-50').css({'top': ($('#content-container-50').height() - $('#content-text-50').height())/2 });
+					$('#content-text-50').css({'left': ($('#content-container-50').width() - $('#content-text-50').width())/2 });
+					//googlemap-51 vertical center
+					//$('#googlemap-51').css({'top': ($('#content-container-51').height() - $('#googlemap-51').height())/2 });
+
+					//section-container-60 height
+					$('#section-container-60').css({'height': $('#content-text-60').height()+ 30 });
+					$('#content-container-60').css({'height': $('#section-container-60').height() });
+					$('#content-container-61').css({'height': $('#section-container-60').height() });
+					//content-container-60 vertical and horizontal centering 
+					$('#content-text-60').css({'top': ($('#content-container-60').height() - $('#content-text-60').height())/2 });
+					$('#content-text-60').css({'left': ($('#content-container-60').width() - $('#content-text-60').width())/2 });
+					$('#section-img-61').css({'top': ($('#content-container-60').height() - $('#section-img-61').height())/2 });
+					$('#section-img-61').css({'right': ($('#content-container-60').width() - $('#content-text-60').width())/2 });
+
+					
+			
+				}
+
+			});
+		});
+
+	</script>
+</html>
+
