@@ -7,7 +7,10 @@ Current Version:
 	
 	Optimized for mobile devices
 	
+	Cleaned up code, removed redundancies
+	
 	Optimized content needs review
+	
 	
 Past Versions: 
 
