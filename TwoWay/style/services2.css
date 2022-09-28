@@ -6,7 +6,6 @@ html,body{
 	padding: 0px;
 	font-size: 0px;	
 }
-
 .navbar-container{
 	display: inline-block;
 	position: fixed;
@@ -17,18 +16,27 @@ html,body{
 	z-index: 10;
 	border-bottom: 3px solid black;
 }
+.navbar-hamburger, .navbar-cross{
+	position: relative;
+	display: inline-block;
+	margin-right: 5%;
+	top: 5%;
+	float: right;
+	height: 90%;
+	cursor:pointer;
+}
 .navbar {
 	position: relative;
 	text-align: right;
 	float: right;
-	padding-right: 50px;
+	padding-right: 5%;
 	width: 70%;
 }
 .navbar-button{
 	display: inline-block;
 	font-family: 'Helvetica', sans-serif;
     font-size: 25px;
-	padding: 0px 30px 0px 30px;
+	padding: 0px 30px;
 	cursor:pointer;
 }
 .navbar-button:hover {
@@ -37,7 +45,7 @@ html,body{
 .nav-img {
 	position: relative;
 	float: left;
-	padding-left: 50px;
+	padding-left: 5%;
 	top: 15%;
 	height: 70%;
 	margin: auto;
@@ -45,7 +53,6 @@ html,body{
 #navbar-button-20{
 	color: #005bbb; 
 }
-
 .section-container {
 	display: inline-block;
 	position: relative;
@@ -62,6 +69,23 @@ html,body{
 .content-text {
 	display: inline-block;
 	position: relative;
+	width: 65%;
+}
+.content-text h1 {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 55px;
+	margin: 0px 0px 40px 0px;
+}
+.content-text h2{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 35px;
+	margin: 0px 0px 40px 0px;
+}
+.content-text p,.content-text label, .content-text li, .content-text a {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 18px;
+	margin: 0px;
+	line-height: 200%;
 }
 .section-button{
 	display: inline-block;
@@ -77,6 +101,7 @@ html,body{
 	position: relative;
 }
 
+
 #section-container-00{
 	width: 100%;
 	overflow: hidden;
@@ -85,56 +110,40 @@ html,body{
 	width: 100%;
 }
 
+
 #section-container-10 {
 	background-color: #f9f9f9;
 }
 #content-container-10 {
 	width: 100%;
 }
-#content-text-10 {
-	width: 65%;
-}
 #content-text-10 h1 {
-	font-family: 'Helvetica', sans-serif;
-	font-size: 55px;
-	margin: 0px 0px 40px 0px;
 	color: #005bbb;
 }
 #content-text-10 p, #content-text-10 li {
-	font-family: 'Helvetica', sans-serif;
-	font-size: 18px;
-	margin: 0px;
-	line-height: 200%;
+	color: #000000;
 }
 
 
 #content-container-20, #content-container-21 {
 	float: left;
 	overflow: hidden;
-}
-#content-container-20, #content-container-21{
 	width: 50%;
 }
-#section-img-20{
+#section-img-20, #section-img-21 {
 	width: 100%;
 }
-#section-img-21{
-	width: 100%;
-}
+
 
 #content-container-30, #content-container-31 {
 	float: left;
 	overflow: hidden;
-}
-#content-container-30, #content-container-31{
 	width: 50%;
 }
-#section-img-30{
+#section-img-30, #section-img-31{
 	width: 100%;
 }
-#section-img-31{
-	width: 100%;
-}
+
 
 #section-container-40 {
 	background-color: #ffffff;
@@ -142,22 +151,13 @@ html,body{
 #content-container-40{
 	width: 100%;
 }
-#content-text-40{
-	width: 65%;
-}
 #content-text-40 h1 {
-	font-family: 'Helvetica', sans-serif;
-	font-size: 55px;
-	margin: 0px 0px 40px 0px;
 	color: #005bbb;
 }
-#content-text-40 p, a {
-	font-family: 'Helvetica', sans-serif;
-	font-size: 18px;
-	margin: 0px;
-	line-height: 200%;
-	
+#content-text-40 p{
+	color: #000000;
 }
+
 
 #section-container-50 {
 	background-color: #000000;
@@ -165,33 +165,15 @@ html,body{
 #content-container-50, #content-container-51 {
 	float: left;
 	overflow: hidden;
-}
-#content-container-50{
 	width: 50%;
-}
-#content-container-51{
-	width: 50%;
-}
-#content-text-50{
-	width: 65%;
 }
 #content-text-50 h1 {
-	font-family: 'Helvetica', sans-serif;
-	font-size: 55px;
-	margin: 0px 0px 40px 0px;
 	color: #ffd500;
 }
 #content-text-50 h2 {
-	font-family: 'Helvetica', sans-serif;
-	font-size: 35px;
-	margin: 0px 0px 40px 0px;
 	color: #ffd500;
 }
-#content-text-50 p,label {
-	font-family: 'Helvetica', sans-serif;
-	font-size: 18px;
-	margin: 0px;
-	line-height: 200%;
+#content-text-50 p, #content-text-50 label {
 	color: #ffffff;
 }
 #content-container-50 {
@@ -199,30 +181,12 @@ html,body{
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-
-/*
-#section-button-50 {
-	background-image: url("../img/button4d.png");
-}
-#section-button-50:hover {
-	background-image: url("../img/button4b.png");
-}
-
-#section-button-50 p{
-	border: 2px solid #000000;
-	border-radius: 5px;
-}
-#section-button-50 p:hover {
-	color: #005bbb;
-	border-color: #005bbb;
-}
-*/
 #googlemap-51 {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
-input[type=text],input[type=email],textarea,select{
+input[type=text], input[type=email], textarea, select{
     width: 100%;
     padding: 8px 10px;
     margin: 0px 0px 10px 0px;
@@ -237,7 +201,7 @@ input[type=submit] {
     width: 100%;
     background-color: #ffd500;
     padding: 14px 20px;
-    margin: 50px 0px 0px 0px;
+    margin-top: 50px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -250,45 +214,24 @@ input[type=submit]:hover {
     color: #ffffff;
 }
 
+
 #section-container-60 {
 	background-color: #ffffff;
 }
-#content-container-60, #content-container-51 {
+#content-container-60, #content-container-61 {
 	float: left;
-	overflow: hidden;
-}
-#content-container-60, #content-container-61{
 	width: 50%;
 }
-#content-text-60{
-	width: 65%;
+#content-container-61{
+	height: 90%;
 }
 #content-text-60 p{
-	font-family: 'Helvetica', sans-serif;
-	font-size: 18px;
-	margin: 0px;
 	line-height: 150%;
 	color: #005bbb;
 }
-
-/*
-#section-button-50 {
-	background-image: url("../img/button4d.png");
-}
-#section-button-50:hover {
-	background-image: url("../img/button4b.png");
-}
-
-#section-button-50 p{
-	border: 2px solid #000000;
-	border-radius: 5px;
-}
-#section-button-50 p:hover {
-	color: #005bbb;
-	border-color: #005bbb;
-}
-*/
 #section-img-61{
+	max-height: 50%;
+	max-width: 80%;
 	float: right;
 }
 
