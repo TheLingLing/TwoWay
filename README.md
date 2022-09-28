@@ -3,8 +3,16 @@ Two Way Dog Walking and Pet Services Website Redesign
 
 Current Version: 
 
+	v0.2 - Responsive Design Implemented + requested changes implemented
+	
+	Optimized for mobile devices
+	
+	Optimized content needs review
+	
+Past Versions: 
+
 	v0.1 - Initial Website Design
 
-	Content needs review
-
 	Not fully optimized for mobile devices
+	
+	Content needs review
