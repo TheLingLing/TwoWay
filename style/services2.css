@@ -179,7 +179,7 @@ html,body{
 #content-container-50 {
 	background-image: url("../img/services2-50.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 }
 #googlemap-51 {
 	position: relative;
